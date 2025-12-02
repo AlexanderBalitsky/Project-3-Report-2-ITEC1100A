@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Block Breaker - Alexander Balitsky</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Block Breaker</h1>
+    <p class="subtitle">Use ← → to move. Space to launch. R to restart.</p>
+  </header>
+
+  <main>
+    <div id="gameContainer">
+      <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+      <div id="hud">
+        <div id="score">Score: 0</div>
+        <div id="lives">Lives: 3</div>
+      </div>
+
+      <div id="overlay" class="overlay visible">
+        <div class="menu">
+          <h2>Block Breaker</h2>
+          <p>Destroy every block to win! Lives: 3</p>
+          <div class="controls">
+            <p><strong>Controls:</strong> Left / Right arrows to move. Space to launch. R to restart.</p>
+          </div>
+          <div class="menuButtons">
+            <button id="startBtn">Start Game</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="message" class="message hidden"></div>
+
+      <div id="bottomControls">
+        <button id="restartBtn">Restart</button>
+      </div>
+    </div>
+
+    <section id="instructions">
+      <h3>Instructions</h3>
+      <p>Move the paddle left and right with the arrow keys. Press <strong>Space</strong> to launch the ball. Destroy all blocks to advance levels. Each level changes the background colour and slightly increases ball speed.</p>
+    </section>
+
+    <div class="video-section">
+    <h2>Gameplay Demo</h2>
+    <div class="video-wrapper">
+        <iframe 
+            src="https://www.youtube.com/embed/VIDEO_ID_HERE" 
+            title="YouTube video player"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+</div>
+
+<div class="screenshots-section">
+    <h2>Screenshots</h2>
+    <div class="screenshots-grid">
+        <img src="URL_TO_IMAGE_1" alt="Screenshot 1">
+        <img src="URL_TO_IMAGE_2" alt="Screenshot 2">
+        <img src="URL_TO_IMAGE_3" alt="Screenshot 3">
+    </div>
+</div>
+
+    <section id="credits">
+      <h3>Credits</h3>
+      <p>Created by Alexander Balitsky for ITEC1100A.</p>
+      <p>HTML5 Canvas, JavaScript, CSS.</p>
+    </section>
+  </main>
+
+  <footer>
+    <small>Project 3 - Report 2</small>
+  </footer>
+
+  <script src="game.js"></script>
+</body>
+</html>
