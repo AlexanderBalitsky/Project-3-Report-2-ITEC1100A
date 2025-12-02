@@ -128,7 +128,6 @@ main{ width:100%; max-width:980px; }
 .video-wrapper {
     position: relative;
     width: 100%;
-    max-width: 560px;
     margin: 0 auto;
     padding-bottom: 56.25%;
     height: 0;
